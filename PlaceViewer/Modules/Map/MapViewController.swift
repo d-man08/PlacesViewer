@@ -54,7 +54,14 @@ class MapViewController: UIViewController {
 extension MapViewController: MapViewDelegate {
   
   func viewDidTap(on location: CLLocation) {
-    
+    model.getClosestPlace(for: location) { (result) in
+      switch result {
+      case .success(let placeInfo):
+        return
+      case.failure(let error):
+        return
+      }
+    }
   }
   
 }

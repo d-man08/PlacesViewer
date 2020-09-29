@@ -12,16 +12,15 @@ import NMAKit
 protocol MapViewDelegate: class {
   
   func viewDidTap(on location: CLLocation)
-  
 }
 
 protocol MapViewProtocol: UIView {
   
   var delegate: MapViewDelegate? { get set }
-  
+  func showDetails(for placeInfo: PlaceInfo)
 }
 
-class MapView: UIView, MapViewProtocol {
+class MapView: UIView {
   
   weak var delegate: MapViewDelegate?
   @IBOutlet weak var mapView: NMAMapView!
@@ -30,6 +29,10 @@ class MapView: UIView, MapViewProtocol {
   
   override func awakeFromNib() {
     super.awakeFromNib()
+    setupMapView()
+  }
+  
+  private func setupMapView() {
     let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
     mapView.addGestureRecognizer(tap)
   }
@@ -41,16 +44,23 @@ class MapView: UIView, MapViewProtocol {
       return
     }
     
+    delegate?.viewDidTap(on: CLLocation(latitude: touchGeoCoordinates.latitude, longitude: touchGeoCoordinates.longitude))
+  }
+  
+}
+
+extension MapView: MapViewProtocol {
+  
+  func showDetails(for placeInfo: PlaceInfo) {
     guard let mapPlaceIcon = mapMarkerIcon() else {
       return
     }
     
-    let locationMarker = NMAMapMarker(geoCoordinates: touchGeoCoordinates, icon: mapPlaceIcon)
+    let locationMarker = NMAMapMarker(geoCoordinates: NMAGeoCoordinates(latitude: placeInfo.position.coordinate.latitude, longitude: placeInfo.position.coordinate.longitude), icon: mapPlaceIcon)
     self.locationMapMarker = locationMarker
     
     self.mapView.removeAllMapObjects()
     self.mapView.add(mapObject: locationMarker)
-    
   }
   
   private func mapMarkerIcon() -> NMAImage? {
