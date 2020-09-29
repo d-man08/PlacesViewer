@@ -6,22 +6,48 @@
 	objectVersion = 51;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		993566BA64A1DC8814A29D5F5820AEB9 /* HEREMaps */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C3688D2BC092E154EF5DB3C675428062 /* Build configuration list for PBXAggregateTarget "HEREMaps" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = HEREMaps;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		8EC673FE462FB633FA64C566DD62CB69 /* Pods-PlaceViewer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B7F000FDD624DA8F77F8E3257EF985 /* Pods-PlaceViewer-dummy.m */; };
+		25BB53CB4C7F91A8F4D4A7A1BBEF4952 /* Pods-PlaceViewer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B141342226825F965258DA728AE990CF /* Pods-PlaceViewer-dummy.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		592E728412ABFF2E83F451951AC87E02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 993566BA64A1DC8814A29D5F5820AEB9;
+			remoteInfo = HEREMaps;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		01A9C59129DDE7943259E87BF33BD58C /* Pods-PlaceViewer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PlaceViewer-acknowledgements.plist"; sourceTree = "<group>"; };
 		0376942A6D94F7FE7A9693F5C893C8BA /* libPods-PlaceViewer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-PlaceViewer.a"; path = "libPods-PlaceViewer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2351390F45A72C49D3D0AE7831A7611A /* Pods-PlaceViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PlaceViewer.release.xcconfig"; sourceTree = "<group>"; };
-		35B7F000FDD624DA8F77F8E3257EF985 /* Pods-PlaceViewer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PlaceViewer-dummy.m"; sourceTree = "<group>"; };
-		6B0DF9D8FF45C6E0BB9E3C7B9E0E60B8 /* Pods-PlaceViewer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PlaceViewer-acknowledgements.plist"; sourceTree = "<group>"; };
+		2FCAE30490C5A28BF8877BC8AEBC5F49 /* HEREMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HEREMaps.debug.xcconfig; sourceTree = "<group>"; };
+		3CB9AC12FD94F659C794981E333B5AF7 /* NMAKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NMAKit.framework; path = framework/NMAKit.framework; sourceTree = "<group>"; };
+		5942670A1C394100B77F55E3A0C9DF37 /* Pods-PlaceViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PlaceViewer.release.xcconfig"; sourceTree = "<group>"; };
+		6C09A10C0CC2FD3DC6E4CA51ABA94C7A /* Pods-PlaceViewer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PlaceViewer-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A61711A856E4F80FDF774DC2CDDE1620 /* Pods-PlaceViewer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PlaceViewer-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FFCE3B340A5C9731BCF6DEE5FB87A3C5 /* Pods-PlaceViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PlaceViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		B141342226825F965258DA728AE990CF /* Pods-PlaceViewer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PlaceViewer-dummy.m"; sourceTree = "<group>"; };
+		CB5B73C36C0C7F52E2305D6333463ECD /* Pods-PlaceViewer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PlaceViewer-frameworks.sh"; sourceTree = "<group>"; };
+		D62A314CD985B5A55157372D0A547887 /* Pods-PlaceViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PlaceViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		E4057C92C9B855135019F97AB42C0557 /* HEREMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HEREMaps.release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8549FF6CE97C6F376A73820A1421F998 /* Frameworks */ = {
+		A23D3DFBAE4D9AC8FC2B714DB3C829B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -31,25 +57,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2252742B37BFE5086825700BB98D8A0F /* Pods-PlaceViewer */ = {
+		0079F24F616AB4B975EBD2772894E6CC /* HEREMaps */ = {
 			isa = PBXGroup;
 			children = (
-				A61711A856E4F80FDF774DC2CDDE1620 /* Pods-PlaceViewer-acknowledgements.markdown */,
-				6B0DF9D8FF45C6E0BB9E3C7B9E0E60B8 /* Pods-PlaceViewer-acknowledgements.plist */,
-				35B7F000FDD624DA8F77F8E3257EF985 /* Pods-PlaceViewer-dummy.m */,
-				FFCE3B340A5C9731BCF6DEE5FB87A3C5 /* Pods-PlaceViewer.debug.xcconfig */,
-				2351390F45A72C49D3D0AE7831A7611A /* Pods-PlaceViewer.release.xcconfig */,
+				EEFC87F5FD54638C157DA8A79E9AAFB0 /* Frameworks */,
+				2B495BBA47EC2FF4584D27263B64B614 /* Support Files */,
 			);
-			name = "Pods-PlaceViewer";
-			path = "Target Support Files/Pods-PlaceViewer";
+			name = HEREMaps;
+			path = HEREMaps;
 			sourceTree = "<group>";
 		};
-		25BF625BA4FF5E739A9436836AC7B944 /* Targets Support Files */ = {
+		2B495BBA47EC2FF4584D27263B64B614 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2252742B37BFE5086825700BB98D8A0F /* Pods-PlaceViewer */,
+				2FCAE30490C5A28BF8877BC8AEBC5F49 /* HEREMaps.debug.xcconfig */,
+				E4057C92C9B855135019F97AB42C0557 /* HEREMaps.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HEREMaps";
+			sourceTree = "<group>";
+		};
+		45C42E384C477DCC7E08158DA30FDE2F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E01D303228CFC4AFDDAC4615ED6B6F80 /* Pods-PlaceViewer */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		61D950020384B0918EC3CB4968906F66 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0079F24F616AB4B975EBD2772894E6CC /* HEREMaps */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		B1EF51C2EE7C8B0EC806BCBEE13C8B2E /* Products */ = {
@@ -65,8 +106,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				61D950020384B0918EC3CB4968906F66 /* Pods */,
 				B1EF51C2EE7C8B0EC806BCBEE13C8B2E /* Products */,
-				25BF625BA4FF5E739A9436836AC7B944 /* Targets Support Files */,
+				45C42E384C477DCC7E08158DA30FDE2F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,10 +119,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E01D303228CFC4AFDDAC4615ED6B6F80 /* Pods-PlaceViewer */ = {
+			isa = PBXGroup;
+			children = (
+				6C09A10C0CC2FD3DC6E4CA51ABA94C7A /* Pods-PlaceViewer-acknowledgements.markdown */,
+				01A9C59129DDE7943259E87BF33BD58C /* Pods-PlaceViewer-acknowledgements.plist */,
+				B141342226825F965258DA728AE990CF /* Pods-PlaceViewer-dummy.m */,
+				CB5B73C36C0C7F52E2305D6333463ECD /* Pods-PlaceViewer-frameworks.sh */,
+				D62A314CD985B5A55157372D0A547887 /* Pods-PlaceViewer.debug.xcconfig */,
+				5942670A1C394100B77F55E3A0C9DF37 /* Pods-PlaceViewer.release.xcconfig */,
+			);
+			name = "Pods-PlaceViewer";
+			path = "Target Support Files/Pods-PlaceViewer";
+			sourceTree = "<group>";
+		};
+		EEFC87F5FD54638C157DA8A79E9AAFB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CB9AC12FD94F659C794981E333B5AF7 /* NMAKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C882C78F24B5744C7D533379BDAEEA0F /* Headers */ = {
+		B4F8E3AC27B9B7479222DC3CF7AF47D2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -92,15 +156,16 @@
 /* Begin PBXNativeTarget section */
 		077A07F7EDE7831C5ABB9EBDAE0EF7C0 /* Pods-PlaceViewer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E0DBDAFBF5DF30ACF082C17ED52B275A /* Build configuration list for PBXNativeTarget "Pods-PlaceViewer" */;
+			buildConfigurationList = B59CDDA099FFAB31F1A1212057E8C617 /* Build configuration list for PBXNativeTarget "Pods-PlaceViewer" */;
 			buildPhases = (
-				C882C78F24B5744C7D533379BDAEEA0F /* Headers */,
-				E9C5F00EB3F5AA641D18FB752A3EEE39 /* Sources */,
-				8549FF6CE97C6F376A73820A1421F998 /* Frameworks */,
+				B4F8E3AC27B9B7479222DC3CF7AF47D2 /* Headers */,
+				22E487B26E898A481F48D757BF97B4EA /* Sources */,
+				A23D3DFBAE4D9AC8FC2B714DB3C829B3 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B8EB244D3A3742A775EC2F9BC0369652 /* PBXTargetDependency */,
 			);
 			name = "Pods-PlaceViewer";
 			productName = "Pods-PlaceViewer";
@@ -129,26 +194,36 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				993566BA64A1DC8814A29D5F5820AEB9 /* HEREMaps */,
 				077A07F7EDE7831C5ABB9EBDAE0EF7C0 /* Pods-PlaceViewer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E9C5F00EB3F5AA641D18FB752A3EEE39 /* Sources */ = {
+		22E487B26E898A481F48D757BF97B4EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EC673FE462FB633FA64C566DD62CB69 /* Pods-PlaceViewer-dummy.m in Sources */,
+				25BB53CB4C7F91A8F4D4A7A1BBEF4952 /* Pods-PlaceViewer-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B8EB244D3A3742A775EC2F9BC0369652 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HEREMaps;
+			target = 993566BA64A1DC8814A29D5F5820AEB9 /* HEREMaps */;
+			targetProxy = 592E728412ABFF2E83F451951AC87E02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		41EE49440B70A437F9F2026450898EE8 /* Debug */ = {
+		0E6A06351C673D027D408199AA536992 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FFCE3B340A5C9731BCF6DEE5FB87A3C5 /* Pods-PlaceViewer.debug.xcconfig */;
+			baseConfigurationReference = D62A314CD985B5A55157372D0A547887 /* Pods-PlaceViewer.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -167,6 +242,47 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+		60EED9725FAEC8E1289C649860C086E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4057C92C9B855135019F97AB42C0557 /* HEREMaps.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		617AB72F238753CA06E2DE6D00C2447F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5942670A1C394100B77F55E3A0C9DF37 /* Pods-PlaceViewer.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		61FC5749665EDDB2D90E737333B3BA8D /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -232,28 +348,22 @@
 			};
 			name = Debug;
 		};
-		76AC4C7D9B0BDD3A66FFB0546CE3B475 /* Release */ = {
+		EAF566AD4A5A42413110024EC9301BAC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2351390F45A72C49D3D0AE7831A7611A /* Pods-PlaceViewer.release.xcconfig */;
+			baseConfigurationReference = 2FCAE30490C5A28BF8877BC8AEBC5F49 /* HEREMaps.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
 		F671B4D3AA8F2CA18D12CD74BD1CDEF9 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -327,11 +437,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E0DBDAFBF5DF30ACF082C17ED52B275A /* Build configuration list for PBXNativeTarget "Pods-PlaceViewer" */ = {
+		B59CDDA099FFAB31F1A1212057E8C617 /* Build configuration list for PBXNativeTarget "Pods-PlaceViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				41EE49440B70A437F9F2026450898EE8 /* Debug */,
-				76AC4C7D9B0BDD3A66FFB0546CE3B475 /* Release */,
+				0E6A06351C673D027D408199AA536992 /* Debug */,
+				617AB72F238753CA06E2DE6D00C2447F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3688D2BC092E154EF5DB3C675428062 /* Build configuration list for PBXAggregateTarget "HEREMaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAF566AD4A5A42413110024EC9301BAC /* Debug */,
+				60EED9725FAEC8E1289C649860C086E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

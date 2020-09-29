@@ -157,6 +157,7 @@
 				32856A4E251CE5700030D0D1 /* Sources */,
 				32856A4F251CE5700030D0D1 /* Frameworks */,
 				32856A50251CE5700030D0D1 /* Resources */,
+				05E19C2F5710099D67363526 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,6 +215,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		05E19C2F5710099D67363526 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlaceViewer/Pods-PlaceViewer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlaceViewer/Pods-PlaceViewer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlaceViewer/Pods-PlaceViewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7F6D146133E2803DCC75E3E1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
