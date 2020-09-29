@@ -16,6 +16,13 @@
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oVR-MK-V7g" customClass="NMAMapView">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KGH-Ep-5cP">
+                            <rect key="frame" x="8" y="446" width="304" height="114"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </view>
+                    </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
             </subviews>
@@ -24,6 +31,7 @@
             <viewLayoutGuide key="safeArea" id="h8W-bH-Jsq"/>
             <connections>
                 <outlet property="mapView" destination="oVR-MK-V7g" id="Myb-ue-mfe"/>
+                <outlet property="placeDetailsBackView" destination="KGH-Ep-5cP" id="aov-XW-zOV"/>
             </connections>
             <point key="canvasLocation" x="238.125" y="-71.83098591549296"/>
         </view>

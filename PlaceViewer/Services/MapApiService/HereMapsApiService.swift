@@ -47,8 +47,8 @@ class HereMapsApiService: MapApiServiceProtocol {
       }
     }
     
-    let hereRequest = placesInstance.createHereRequest(location: NMAGeoCoordinates(latitude: latitude, longitude: longitude), filters: nil)
-    if let error = hereRequest.start(requestCompletion) {
+    let discoveryRequest = placesInstance.createAroundRequest(location: NMAGeoCoordinates(latitude: latitude, longitude: longitude), searchArea: nil, filters: nil)
+    if let error = discoveryRequest.start(requestCompletion) {
       completion(Result.failure(error))
       return
     }

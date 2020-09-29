@@ -26,13 +26,4 @@ extension UIView {
     return view as! T
   }
   
-  class func create <ViewType> (withNibName nibName: String) -> ViewType {
-      
-      let nibContent = Bundle(for: self).loadNibNamed(nibName, owner: nil, options: nil)
-      guard let view = nibContent?.first as? ViewType else {
-          fatalError("Nib \(nibName) does not contain \(nibName) View as first object")
-      }
-      return view
-  }
-  
 }

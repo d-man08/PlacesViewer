@@ -11,7 +11,7 @@ import UIKit
 class ImageHelper {
   
   class var mapMarkerImage: UIImage? {
-    return UIImage(named: "map_point")
+    return UIImage(named: "placePin")
   }
 
 }

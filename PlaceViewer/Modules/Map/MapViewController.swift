@@ -57,7 +57,7 @@ extension MapViewController: MapViewDelegate {
     model.getClosestPlace(for: location) { (result) in
       switch result {
       case .success(let placeInfo):
-        return
+        self.customView.showDetails(for: placeInfo)
       case.failure(let error):
         return
       }

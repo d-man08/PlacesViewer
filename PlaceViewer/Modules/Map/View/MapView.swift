@@ -24,17 +24,32 @@ class MapView: UIView {
   
   weak var delegate: MapViewDelegate?
   @IBOutlet weak var mapView: NMAMapView!
+  @IBOutlet weak var placeDetailsBackView: UIView!
   
-  private var locationMapMarker: NMAMapMarker?
+  private var placeDetailsView: PlaceDetailsViewProtocol?
   
   override func awakeFromNib() {
     super.awakeFromNib()
     setupMapView()
+    setupPlaceDetailsView()
   }
   
   private func setupMapView() {
     let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
     mapView.addGestureRecognizer(tap)
+  }
+  
+  private func setupPlaceDetailsView() {
+    placeDetailsView = PlaceDetailsView.create()
+    
+    guard let placeDetailsView = placeDetailsView else {
+      return
+    }
+    placeDetailsBackView.addSubview(placeDetailsView)
+    placeDetailsView.frame = placeDetailsBackView.bounds
+    
+    placeDetailsBackView.isHidden = true
+    ThemeHelper.applyRounded(placeDetailsBackView)
   }
   
   @objc func handleTap(_ touch: UITapGestureRecognizer) {
@@ -57,10 +72,11 @@ extension MapView: MapViewProtocol {
     }
     
     let locationMarker = NMAMapMarker(geoCoordinates: NMAGeoCoordinates(latitude: placeInfo.position.coordinate.latitude, longitude: placeInfo.position.coordinate.longitude), icon: mapPlaceIcon)
-    self.locationMapMarker = locationMarker
     
     self.mapView.removeAllMapObjects()
     self.mapView.add(mapObject: locationMarker)
+    
+    self.setupPlaceDetailsView(for: placeInfo)
   }
   
   private func mapMarkerIcon() -> NMAImage? {
@@ -70,6 +86,12 @@ extension MapView: MapViewProtocol {
     }
     
     return mapPlaceIcon
+  }
+  
+  private func setupPlaceDetailsView(for placeInfo: PlaceInfo) {
+    placeDetailsBackView.isHidden = false
+    
+    placeDetailsView?.setup(for: placeInfo)
   }
   
 }
