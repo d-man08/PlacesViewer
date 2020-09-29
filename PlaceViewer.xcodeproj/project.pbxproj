@@ -12,6 +12,8 @@
 		32856A5B251CE5770030D0D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32856A59251CE5770030D0D1 /* LaunchScreen.storyboard */; };
 		329801F0252349C0004F6F78 /* UIView+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329801EF252349C0004F6F78 /* UIView+Create.swift */; };
 		329801F225234AAA004F6F78 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329801F125234AAA004F6F78 /* HomeCoordinator.swift */; };
+		329801F4252385B8004F6F78 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329801F3252385B8004F6F78 /* Defines.swift */; };
+		329801F725239800004F6F78 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329801F625239800004F6F78 /* ImageHelper.swift */; };
 		32B50E92251DF24600E5D20E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B50E91251DF24600E5D20E /* AppCoordinator.swift */; };
 		32B50E9C251E0FD400E5D20E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B50E96251E0FD400E5D20E /* MapViewController.swift */; };
 		32B50E9D251E0FD400E5D20E /* MapBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B50E97251E0FD400E5D20E /* MapBuilder.swift */; };
@@ -30,6 +32,8 @@
 		32856A5C251CE5770030D0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		329801EF252349C0004F6F78 /* UIView+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Create.swift"; sourceTree = "<group>"; };
 		329801F125234AAA004F6F78 /* HomeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		329801F3252385B8004F6F78 /* Defines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defines.swift; sourceTree = "<group>"; };
+		329801F625239800004F6F78 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		32B50E91251DF24600E5D20E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		32B50E96251E0FD400E5D20E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		32B50E97251E0FD400E5D20E /* MapBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapBuilder.swift; sourceTree = "<group>"; };
@@ -74,10 +78,13 @@
 			isa = PBXGroup;
 			children = (
 				32856A55251CE5700030D0D1 /* AppDelegate.swift */,
+				329801F3252385B8004F6F78 /* Defines.swift */,
+				329801F825239ABE004F6F78 /* Resources */,
+				32856A57251CE5770030D0D1 /* Assets.xcassets */,
 				329801EE2523484A004F6F78 /* Categories */,
+				329801F525239711004F6F78 /* Helpers */,
 				32B50E90251DF1B000E5D20E /* Coordinators */,
 				32B50E72251DEB1B00E5D20E /* Modules */,
-				32856A57251CE5770030D0D1 /* Assets.xcassets */,
 				32856A59251CE5770030D0D1 /* LaunchScreen.storyboard */,
 				32856A5C251CE5770030D0D1 /* Info.plist */,
 			);
@@ -90,6 +97,21 @@
 				329801EF252349C0004F6F78 /* UIView+Create.swift */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		329801F525239711004F6F78 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				329801F625239800004F6F78 /* ImageHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		329801F825239ABE004F6F78 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		32B50E72251DEB1B00E5D20E /* Modules */ = {
@@ -262,10 +284,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				32B50E9D251E0FD400E5D20E /* MapBuilder.swift in Sources */,
+				329801F725239800004F6F78 /* ImageHelper.swift in Sources */,
 				32856A56251CE5700030D0D1 /* AppDelegate.swift in Sources */,
 				329801F0252349C0004F6F78 /* UIView+Create.swift in Sources */,
 				32B50E9E251E0FD400E5D20E /* MapView.swift in Sources */,
 				32B50E9C251E0FD400E5D20E /* MapViewController.swift in Sources */,
+				329801F4252385B8004F6F78 /* Defines.swift in Sources */,
 				329801F225234AAA004F6F78 /* HomeCoordinator.swift in Sources */,
 				32B50EA0251E0FD400E5D20E /* MapModel.swift in Sources */,
 				32B50E92251DF24600E5D20E /* AppCoordinator.swift in Sources */,

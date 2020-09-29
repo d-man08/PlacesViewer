@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NMAKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     let navigationController = UINavigationController()
     window?.rootViewController = navigationController
+    
+    //HereSDK setup
+    NMAApplicationContext.setAppId(mapApiCredentials.appId, appCode: mapApiCredentials.appCode, licenseKey: mapApiCredentials.licenseKey)
 
     appCoordinator = AppCoordinator(with: navigationController)
     appCoordinator?.start()

@@ -9,17 +9,17 @@
 import UIKit
 
 protocol MapModelDelegate: class {
-
+  
 }
 
 protocol MapModelProtocol: class {
-
-    var delegate: MapModelDelegate? { get set }
+  
+  var delegate: MapModelDelegate? { get set }
 }
 
 class MapModel: MapModelProtocol {
-
-    weak var delegate: MapModelDelegate?
-
+  
+  weak var delegate: MapModelDelegate?
+  
 }
 

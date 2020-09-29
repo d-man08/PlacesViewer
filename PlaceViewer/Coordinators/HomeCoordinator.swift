@@ -12,8 +12,6 @@ class HomeCoordinator {
   
   private let navigationController: UINavigationController
   
-//  private var apiClient: ApiClient!
-  
   init(with navigationController: UINavigationController) {
     self.navigationController = navigationController
   }

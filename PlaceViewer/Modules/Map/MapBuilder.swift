@@ -9,15 +9,15 @@
 import UIKit
 
 class MapBuilder: NSObject {
-
-    class func viewController() -> MapViewController {
-
-        let view: MapViewProtocol = MapView.create() as MapViewProtocol
-        let model: MapModelProtocol = MapModel()
-
-        let viewController = MapViewController(withView: view, model: model)
-        return viewController
-    }
-
+  
+  class func viewController() -> MapViewController {
+    
+    let view: MapViewProtocol = MapView.create() as MapViewProtocol
+    let model: MapModelProtocol = MapModel()
+    
+    let viewController = MapViewController(withView: view, model: model)
+    return viewController
+  }
+  
 }
 

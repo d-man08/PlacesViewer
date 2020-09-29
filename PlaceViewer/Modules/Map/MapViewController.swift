@@ -7,49 +7,58 @@
 //
 
 import UIKit
+import CoreLocation
 
 class MapViewController: UIViewController {
-
-    var model: MapModelProtocol
-
-    fileprivate var tempView: MapViewProtocol?
-    var customView: MapViewProtocol! {
-        return self.view as? MapViewProtocol
-    }
-
-    init(withView view: MapViewProtocol, model: MapModelProtocol) {
-        self.model = model
-        self.tempView = view
-
-        super.init(nibName: nil, bundle: nil)
-    }
-
-    required convenience init?(coder aDecoder: NSCoder) {
-        fatalError("This class needs to be initialized with init(withView:model:) method")
-    }
-
-    override func loadView() {
-        super.loadView()
-
-        self.view = self.tempView
-        self.tempView = nil
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        customView.delegate = self
-        model.delegate = self
-    }
-
+  
+  var model: MapModelProtocol
+  
+  fileprivate var tempView: MapViewProtocol?
+  var customView: MapViewProtocol! {
+    return self.view as? MapViewProtocol
+  }
+  
+  init(withView view: MapViewProtocol, model: MapModelProtocol) {
+    self.model = model
+    self.tempView = view
+    
+    super.init(nibName: nil, bundle: nil)
+  }
+  
+  required convenience init?(coder aDecoder: NSCoder) {
+    fatalError("This class needs to be initialized with init(withView:model:) method")
+  }
+  
+  override func loadView() {
+    super.loadView()
+    
+    self.view = self.tempView
+    self.tempView = nil
+  }
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    customView.delegate = self
+    model.delegate = self
+    
+    setupNavigationBar()
+  }
+  
+  private func setupNavigationBar() {
+    navigationController?.setNavigationBarHidden(true, animated: false)
+  }
+  
 }
 
 extension MapViewController: MapViewDelegate {
-
-    func viewSomeAction(view: MapViewProtocol) {
-    }
+  
+  func viewDidTap(on location: CLLocation) {
+    
+  }
+  
 }
 
 extension MapViewController: MapModelDelegate {
-
+  
 }
