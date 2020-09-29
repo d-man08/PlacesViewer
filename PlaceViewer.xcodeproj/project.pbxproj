@@ -23,6 +23,7 @@
 		3298020D2523E2DC004F6F78 /* ThemeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3298020C2523E2DC004F6F78 /* ThemeHelper.swift */; };
 		3298020F2523E461004F6F78 /* FontHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3298020E2523E461004F6F78 /* FontHelper.swift */; };
 		329802112523E468004F6F78 /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329802102523E468004F6F78 /* ColorHelper.swift */; };
+		329802132523EEDB004F6F78 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329802122523EEDB004F6F78 /* ActivityIndicator.swift */; };
 		32B50E92251DF24600E5D20E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B50E91251DF24600E5D20E /* AppCoordinator.swift */; };
 		32B50E9C251E0FD400E5D20E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B50E96251E0FD400E5D20E /* MapViewController.swift */; };
 		32B50E9D251E0FD400E5D20E /* MapBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B50E97251E0FD400E5D20E /* MapBuilder.swift */; };
@@ -52,6 +53,7 @@
 		3298020C2523E2DC004F6F78 /* ThemeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeHelper.swift; sourceTree = "<group>"; };
 		3298020E2523E461004F6F78 /* FontHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontHelper.swift; sourceTree = "<group>"; };
 		329802102523E468004F6F78 /* ColorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
+		329802122523EEDB004F6F78 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		32B50E91251DF24600E5D20E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		32B50E96251E0FD400E5D20E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		32B50E97251E0FD400E5D20E /* MapBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapBuilder.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				3298020C2523E2DC004F6F78 /* ThemeHelper.swift */,
 				3298020E2523E461004F6F78 /* FontHelper.swift */,
 				329802102523E468004F6F78 /* ColorHelper.swift */,
+				329802122523EEDB004F6F78 /* ActivityIndicator.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 			files = (
 				329802012523A028004F6F78 /* PlaceLink.swift in Sources */,
 				32B50E9D251E0FD400E5D20E /* MapBuilder.swift in Sources */,
+				329802132523EEDB004F6F78 /* ActivityIndicator.swift in Sources */,
 				329801F725239800004F6F78 /* ImageHelper.swift in Sources */,
 				32856A56251CE5700030D0D1 /* AppDelegate.swift in Sources */,
 				329801F0252349C0004F6F78 /* UIView+Create.swift in Sources */,
@@ -492,6 +496,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KRAFFF7M7H;
 				INFOPLIST_FILE = PlaceViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -499,7 +504,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.soloviov.PlaceViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -511,6 +516,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KRAFFF7M7H;
 				INFOPLIST_FILE = PlaceViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -518,7 +524,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.soloviov.PlaceViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

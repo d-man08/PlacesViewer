@@ -4,5 +4,6 @@
 target 'PlaceViewer' do
 
   pod 'HEREMaps', '>= 3.15'
+  pod 'ProgressHUD'
 
 end
