@@ -1,9 +1,9 @@
 //
 //  ActivityIndicator.swift
-//  Digital360Health
+//  PlaceViewer
 //
-//  Created by Dmitry Soloviov on 3.09.2020.
-//  Copyright © 2020 DBBest. All rights reserved.
+//  Created by Dmitry Soloviov on 29.09.2020.
+//  Copyright © 2020 soloviov. All rights reserved.
 //
 
 import UIKit

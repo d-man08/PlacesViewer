@@ -58,10 +58,11 @@ extension MapViewController: MapViewDelegate {
     model.getClosestPlace(for: location) { (result) in
       switch result {
       case .success(let placeInfo):
-        self.customView.showDetails(for: placeInfo)
         ActivityIndicator.dismiss(on: self)
+        self.customView.showDetails(for: placeInfo)
       case.failure(let error):
         ActivityIndicator.dismiss(on: self)
+        AlertHelper.showAlert(withTitle: NSLocalizedString("Error", comment: "Alert view - title"), message: error.localizedDescription, on: self, closeHandler: nil)
       }
     }
   }
