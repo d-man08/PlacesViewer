@@ -12,7 +12,7 @@ class ThemeHelper {
   
   class func applyRounded(_ view: UIView) {
     view.clipsToBounds = true
-    view.layer.cornerRadius = 8
+    view.layer.cornerRadius = 15
   }
   
   class func applyTitleTheme(label: UILabel) {
