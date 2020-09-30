@@ -26,6 +26,8 @@ class MapView: UIView {
   @IBOutlet weak var mapView: NMAMapView!
   @IBOutlet weak var placeDetailsBackView: UIView!
   
+  private var isCenteredOnUserPosition = false
+  
   private var placeDetailsView: PlaceDetailsViewProtocol?
   
   override func awakeFromNib() {
@@ -37,6 +39,29 @@ class MapView: UIView {
   private func setupMapView() {
     let tap = UITapGestureRecognizer(target: self, action: #selector(self.mapTapAction(_:)))
     mapView.addGestureRecognizer(tap)
+    mapView.positionIndicator.isVisible = true
+    setupUserPositionUpdates()
+  }
+  
+  private func setupUserPositionUpdates() {
+    NotificationCenter.default.addObserver(self,
+                                           selector: #selector(self.didUpdatePosition),
+                                           name: NSNotification.Name.NMAPositioningManagerDidUpdatePosition,
+                                           object: NMAPositioningManager.sharedInstance())
+  }
+  
+  @objc func didUpdatePosition() {
+    guard let userPosition = NMAPositioningManager.sharedInstance().currentPosition,
+          let coordinates = userPosition.coordinates else {
+        return
+    }
+    if (!isCenteredOnUserPosition) {
+      mapView.set(geoCenter: coordinates, animation: .linear)
+      isCenteredOnUserPosition = true
+      NotificationCenter.default.removeObserver(self,
+                                                name: NSNotification.Name.NMAPositioningManagerDidUpdatePosition,
+                                                object: NMAPositioningManager.sharedInstance())
+    }
   }
   
   private func setupPlaceDetailsView() {
