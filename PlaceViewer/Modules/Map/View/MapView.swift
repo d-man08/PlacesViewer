@@ -35,7 +35,7 @@ class MapView: UIView {
   }
   
   private func setupMapView() {
-    let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+    let tap = UITapGestureRecognizer(target: self, action: #selector(self.mapTapAction(_:)))
     mapView.addGestureRecognizer(tap)
   }
   
@@ -52,7 +52,7 @@ class MapView: UIView {
     ThemeHelper.applyRounded(placeDetailsBackView)
   }
   
-  @objc func handleTap(_ touch: UITapGestureRecognizer) {
+  @objc func mapTapAction(_ touch: UITapGestureRecognizer) {
     let touchPoint = touch.location(in: self)
     
     guard let touchGeoCoordinates = mapView.geoCoordinates(from: touchPoint) else {

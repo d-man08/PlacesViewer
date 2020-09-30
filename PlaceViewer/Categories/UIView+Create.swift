@@ -10,10 +10,6 @@ import UIKit
 
 extension UIView {
   
-  class func fromNib<T: UIView>() -> T {
-    return Bundle.main.loadNibNamed(String(describing: T.self), owner: nil, options: nil)![0] as! T
-  }
-  
   class func create<T>() -> T {
     let viewNibName = String(describing: self)
     let nibContent = Bundle(for: self).loadNibNamed(viewNibName, owner: nil, options: nil)

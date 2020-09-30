@@ -16,7 +16,6 @@
 		329801F725239800004F6F78 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329801F625239800004F6F78 /* ImageHelper.swift */; };
 		329801FC25239EEF004F6F78 /* MapApiServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329801FB25239EEF004F6F78 /* MapApiServiceProtocol.swift */; };
 		329801FE25239EF6004F6F78 /* HereMapsApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329801FD25239EF6004F6F78 /* HereMapsApiService.swift */; };
-		329802012523A028004F6F78 /* PlaceLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329802002523A028004F6F78 /* PlaceLink.swift */; };
 		329802032523B574004F6F78 /* PlaceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329802022523B574004F6F78 /* PlaceInfo.swift */; };
 		3298020A2523D84A004F6F78 /* PlaceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329802082523D84A004F6F78 /* PlaceDetailsView.swift */; };
 		3298020B2523D84A004F6F78 /* PlaceDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329802092523D84A004F6F78 /* PlaceDetailsView.xib */; };
@@ -47,7 +46,6 @@
 		329801F625239800004F6F78 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		329801FB25239EEF004F6F78 /* MapApiServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapApiServiceProtocol.swift; sourceTree = "<group>"; };
 		329801FD25239EF6004F6F78 /* HereMapsApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HereMapsApiService.swift; sourceTree = "<group>"; };
-		329802002523A028004F6F78 /* PlaceLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceLink.swift; sourceTree = "<group>"; };
 		329802022523B574004F6F78 /* PlaceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceInfo.swift; sourceTree = "<group>"; };
 		329802082523D84A004F6F78 /* PlaceDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceDetailsView.swift; sourceTree = "<group>"; };
 		329802092523D84A004F6F78 /* PlaceDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaceDetailsView.xib; sourceTree = "<group>"; };
@@ -163,7 +161,6 @@
 		329801FF25239F58004F6F78 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				329802002523A028004F6F78 /* PlaceLink.swift */,
 				329802022523B574004F6F78 /* PlaceInfo.swift */,
 			);
 			path = Entities;
@@ -341,7 +338,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				329802012523A028004F6F78 /* PlaceLink.swift in Sources */,
 				32B50E9D251E0FD400E5D20E /* MapBuilder.swift in Sources */,
 				329802132523EEDB004F6F78 /* ActivityIndicator.swift in Sources */,
 				329801F725239800004F6F78 /* ImageHelper.swift in Sources */,
